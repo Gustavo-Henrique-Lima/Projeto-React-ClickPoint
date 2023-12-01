@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <Head />
+      <title>Click Point</title>
       <body>
         <Main />
         <NextScript />
