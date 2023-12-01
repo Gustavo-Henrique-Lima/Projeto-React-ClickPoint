@@ -9,7 +9,7 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 1. **Clone este repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/Gustavo-Henrique-Lima/Projeto-React-ClickPoint.git
 
 2. **Navegue até o diretório do projeto:**
 
