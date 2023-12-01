@@ -1,6 +1,6 @@
 # Interactive Point Tracking App
 
-Este é um projeto simples criado com Next.js para rastrear pontos em uma área não clicável.
+Este é um projeto simples criado com Next.js para rastrear pontos em uma área clicável.
 
 ## Como Baixar e Rodar o Projeto
 
