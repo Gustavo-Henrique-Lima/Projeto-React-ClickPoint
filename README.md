@@ -14,7 +14,7 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 2. **Navegue até o diretório do projeto:**
 
     ```bash
-    cd nome-do-repositorio
+    cd Projeto-React-ClickPoint
 
 3. **Instale as dependências:**
 
