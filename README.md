@@ -1,6 +1,6 @@
 # Interactive Point Tracking App
 
-Este é um projeto simples criado com Next.js para rastrear pontos em uma área não clicável.
+Este é um projeto simples criado com Next.js para rastrear pontos em uma área clicável.
 
 ## Como Baixar e Rodar o Projeto
 
@@ -9,12 +9,12 @@ Certifique-se de ter o Node.js instalado em sua máquina.
 1. **Clone este repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/Gustavo-Henrique-Lima/Projeto-React-ClickPoint.git
 
 2. **Navegue até o diretório do projeto:**
 
     ```bash
-    cd nome-do-repositorio
+    cd Projeto-React-ClickPoint
 
 3. **Instale as dependências:**
 
