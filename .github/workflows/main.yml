@@ -16,17 +16,10 @@ jobs:
         run: |
           npm install
           npm run build 
-      - uses: actions/checkout@v3
+       # Adicionar etapas para deploy no GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          submodules: true
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PROUD_WATER_061224510 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          app_location: "/" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "/" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          deploy_key: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  
+          publish_branch: main  
