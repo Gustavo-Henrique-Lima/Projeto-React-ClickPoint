@@ -48,7 +48,7 @@ export default function Home() {
           <button className='bg-slate-500 text-white ml-7 rounded-10 px-15 py-5' onClick={buttonBack} disabled={showBack}>
             <Image src={undo} alt="Imagem com símbolo de voltar" />
           </button>
-          <h1 className='text-white font-serif text-lg'>Área não clicável</h1>
+          <h1 className='text-white font-serif text-lg'>Área não clicável  </h1>
           <button className='bg-slate-500 rounded-10 px-15 py-5 text-white mr-7' onClick={buttonNext} disabled={showNext}>
             <Image src={share} alt="Imagem com símbolo de restaurar" />
           </button>
