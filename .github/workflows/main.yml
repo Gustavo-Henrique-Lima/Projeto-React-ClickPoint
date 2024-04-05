@@ -1,31 +1,19 @@
-name: Deploy to GitHub Pages
+name: Gerencia de configuracao
 
-on:
-  push:
-    branches:
-      - main
+on: pull_request
 
 jobs:
-  build-and-deploy:
+  continuos-integration:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
+      - uses: actions/checkout@v3
+      - name: Using Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18' 
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: main  # ou a branch que deseja usar para o GitHub Pages
+          node-version: 20.
+      - name: run install and build
+        run: |
+          npm install
+          npm run build 
+  
