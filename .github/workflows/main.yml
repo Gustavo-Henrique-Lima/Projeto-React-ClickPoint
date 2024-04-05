@@ -8,6 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Habilitar o histórico de commits completo
       - name: Using Node.js
         uses: actions/setup-node@v2
         with:
@@ -15,11 +17,12 @@ jobs:
       - name: run install and build
         run: |
           npm install
-          npm run build 
-       # Adicionar etapas para deploy no GitHub Pages
+          npm run build
+
+      # Adicionar etapas para deploy no GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  
-          publish_branch: main  
+          publish_dir: / 
+          publish_branch: main
