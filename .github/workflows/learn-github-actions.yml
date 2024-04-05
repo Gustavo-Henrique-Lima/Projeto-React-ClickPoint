@@ -1,7 +1,7 @@
 name: Gerencia de configuracao
 
 on:
-  push:
+  pull_request:
     branches: ["main"]
 permissions:
   contents: read
